@@ -1,9 +1,23 @@
 package com.leetcode.oj.ReverseNodesinkGroup;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ListNode.
+ */
 public class ListNode {
-	     int val;
-	     ListNode next;
-	     ListNode(int x) {
+	     
+     	/** The val. */
+     	int val;
+	     
+     	/** The next. */
+     	ListNode next;
+	     
+     	/**
+     	 * Instantiates a new list node.
+     	 *
+     	 * @param x the x
+     	 */
+     	ListNode(int x) {
 	    	 val = x;
 	    	 next = null;
 	     }

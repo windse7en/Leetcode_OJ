@@ -12,8 +12,18 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Set;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Solution.
+ */
 public class Solution {
     // assume that all the prices are positive integer;
+    /**
+     * Max profit.
+     *
+     * @param prices the prices
+     * @return the int
+     */
     public int maxProfit(int[] prices) {
     	
     	/*
@@ -45,6 +55,13 @@ public class Solution {
         return max;
         
     }
+    
+    /**
+     * Sets the max.
+     *
+     * @param prices the prices
+     * @return the int[]
+     */
     public int[] setMax(int[] prices){
         if(prices == null || prices.length==1){return prices;}
         int[] maxValues = new int[prices.length];
@@ -72,6 +89,12 @@ public class Solution {
         }
         return maxValues;
     }
+    
+    /**
+     * The main method.
+     *
+     * @param args the arguments
+     */
     public static void main(String[] args){
     	Solution s = new Solution();
     	int[] prices = {5,2,3,2,6,6,2,9,1,0,7,4,5,0};

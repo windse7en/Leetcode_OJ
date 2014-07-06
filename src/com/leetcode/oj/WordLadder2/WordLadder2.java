@@ -12,11 +12,28 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class WordLadder2.
+ */
 public class WordLadder2{
+	
+	/**
+	 * Instantiates a new word ladder2.
+	 */
 	public WordLadder2(){
 		
 	}
-	  public ArrayList<ArrayList<String>> findLadders(String start, String end, HashSet<String> dict) {
+	  
+  	/**
+  	 * Find ladders.
+  	 *
+  	 * @param start the start
+  	 * @param end the end
+  	 * @param dict the dict
+  	 * @return the array list
+  	 */
+  	public ArrayList<ArrayList<String>> findLadders(String start, String end, HashSet<String> dict) {
 		    ArrayList<ArrayList<String>> allPaths = new ArrayList<ArrayList<String>>();
 		    HashMap<String, String> parent = new HashMap<String, String>();
 		   
@@ -73,6 +90,13 @@ public class WordLadder2{
 		    return null;
 		}
 
+		/**
+		 * Next string.
+		 *
+		 * @param str the str
+		 * @param dic the dic
+		 * @return the array list
+		 */
 		public static ArrayList<String> nextString(String str, String[] dic){
 		    ArrayList<String> next = new ArrayList<String>();
 		    for(String d: dic){
@@ -81,6 +105,13 @@ public class WordLadder2{
 		    return next;
 		}
 
+		/**
+		 * One char differed.
+		 *
+		 * @param str the str
+		 * @param dic the dic
+		 * @return true, if successful
+		 */
 		public static boolean oneCharDiffered(String str, String dic){
 		    int length = str.length();
 		    int count = 0;
@@ -90,6 +121,11 @@ public class WordLadder2{
 		    return count == 1;
 		}
 		
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args){
 		HashSet<String> dict  = new HashSet<String>();
 		dict.add("hot");

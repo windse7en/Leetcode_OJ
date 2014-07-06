@@ -6,10 +6,17 @@
  *
  */
 package com.leetcode.oj.findkth;
+// TODO: Auto-generated Javadoc
+
+/**
+ * The Class FindKth.
+ */
 public class FindKth {
 
 	/**
-	 * @param args
+	 * The main method.
+	 *
+	 * @param args the arguments
 	 */
 	public static void main(String[] args) 
 	{
@@ -54,6 +61,13 @@ public class FindKth {
 	}
 
 	
+	/**
+	 * Medianof two sorted arrays opt.
+	 *
+	 * @param A the a
+	 * @param B the b
+	 * @return the double
+	 */
 	public static double MedianofTwoSortedArraysOpt(int[] A, int[] B)
     {
         int t = A.length + B.length;
@@ -69,11 +83,24 @@ public class FindKth {
         return FindKtht(A, 0, A.length, B, 0, B.length, t / 2 + 1);
     }
 
+    /**
+     * Find ktht.
+     *
+     * @param A the a
+     * @param aoffset the aoffset
+     * @param m the m
+     * @param B the b
+     * @param boffset the boffset
+     * @param n the n
+     * @param k the k
+     * @return the int
+     */
     public static int FindKtht(int[] A, int aoffset, int m, int[] B, int boffset, int n, int k)
     {
         //Keep the A is the shorter array.
         if (m > n) FindKtht(B, boffset, n, A, aoffset, m, k);
 
+        int[] temp;
         if (m == 0) return B[k - 1];
         if (k == 1) 
         	{

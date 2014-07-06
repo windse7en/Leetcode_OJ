@@ -8,8 +8,20 @@
 package com.leetcode.oj.ReverseNodesinkGroup;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ReverseNodesinkGroup.
+ */
 public class ReverseNodesinkGroup{
-	 public ListNode reverseKGroup(ListNode head, int k) {
+	 
+ 	/**
+ 	 * Reverse k group.
+ 	 *
+ 	 * @param head the head
+ 	 * @param k the k
+ 	 * @return the list node
+ 	 */
+ 	public ListNode reverseKGroup(ListNode head, int k) {
         int length = this.getLength(head);
         if(k<=1 || length <=1 || k>length){return head;}
         if(k>=2){
@@ -30,6 +42,13 @@ public class ReverseNodesinkGroup{
         }
         return currNode;
     }
+    
+    /**
+     * Gets the length.
+     *
+     * @param head the head
+     * @return the length
+     */
     public int getLength(ListNode head){            //pay attention to the reference value, the copy of the reference
         int length=0;
         while(head!=null){
@@ -38,6 +57,12 @@ public class ReverseNodesinkGroup{
         }
         return length;
     }
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args){
 		ReverseNodesinkGroup rng = new ReverseNodesinkGroup();
 		ListNode head = new ListNode(0);

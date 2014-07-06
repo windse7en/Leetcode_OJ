@@ -7,7 +7,18 @@
  */
 package com.leetcode.oj.FirstMissingPositiveInteger;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class FirstMissingPositiveInteger.
+ */
 public class FirstMissingPositiveInteger{
+    
+    /**
+     * First missing positive.
+     *
+     * @param A the a
+     * @return the int
+     */
     public int firstMissingPositive(int[] A) {
     int length = A.length, curr = 0;
     int temp=0;
@@ -26,6 +37,12 @@ public class FirstMissingPositiveInteger{
         }
         return length+1;
     }
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args){
 		FirstMissingPositiveInteger fmpi = new FirstMissingPositiveInteger();
 		int[] A = {2,1};

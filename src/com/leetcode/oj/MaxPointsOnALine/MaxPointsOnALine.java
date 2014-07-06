@@ -6,10 +6,26 @@
  *
  */
 package com.leetcode.oj.MaxPointsOnALine;
+// TODO: Auto-generated Javadoc
+
+/**
+ * The Class MaxPointsOnALine.
+ */
 public class MaxPointsOnALine{
+	
+	/**
+	 * Instantiates a new max points on a line.
+	 */
 	public MaxPointsOnALine(){
 		
 	}
+	
+	/**
+	 * Max points.
+	 *
+	 * @param points the points
+	 * @return the int
+	 */
 	public int maxPoints(Point[] points){
         if(points.length<=2){return points.length;}
         int nump = points.length; //number of points
@@ -40,6 +56,12 @@ public class MaxPointsOnALine{
         }
         return max;
 	}
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args){
 		Point[] points = new Point[4];
 		points[0] = new Point(1,1);

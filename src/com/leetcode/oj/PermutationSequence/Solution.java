@@ -10,7 +10,19 @@ package com.leetcode.oj.PermutationSequence;
 import java.util.ArrayList;
 import java.util.Stack;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Solution.
+ */
 public class Solution {
+    
+    /**
+     * Gets the permutation.
+     *
+     * @param n the n
+     * @param k the k
+     * @return the permutation
+     */
     public String getPermutation(int n, int k) {
         String result = "";
         int[] nF = new int[n+1];
@@ -37,6 +49,13 @@ public class Solution {
         }
         return new String(temp);
     }
+    
+    /**
+     * Gets the factoria.
+     *
+     * @param n the n
+     * @return the factoria
+     */
     public int[] getFactoria(int n){
         int[] nF = new int[n+1];
         nF[0]=1;
@@ -45,6 +64,15 @@ public class Solution {
         }
         return nF;
     }
+    
+    /**
+     * Reverse.
+     *
+     * @param num the num
+     * @param start the start
+     * @param end the end
+     * @return the int[]
+     */
     public int[] reverse(int[] num,int start,int end){
         Stack<Integer> s = new Stack<Integer>();
         int pos = start;
@@ -57,6 +85,12 @@ public class Solution {
         }
         return num;
     }
+    
+    /**
+     * The main method.
+     *
+     * @param args the arguments
+     */
     public static void main(String[] args){
     	Solution s = new Solution();
     	s.getPermutation(4, 10);
